@@ -1,0 +1,57 @@
+html, body {
+    margin: 0;
+    overflow: hidden; /* Prevent scrolling */
+}
+
+/* Style the video to cover the entire window */
+#myVideo {
+    position: fixed;
+    top: 50%; /* Center vertically */
+    left: 50%; /* Center horizontally */
+    width: 100%; /* Full width of the viewport */
+    height: 100%; /* Full height of the viewport */
+    transform: translate(-50%, -50%) ; /* Center and zoom out by 50% */
+    transform-origin: center; /* Set the origin for scaling*/
+}
+
+/* Add some content at the bottom of the video/page */
+.content {
+    position: fixed;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    color: #f1f1f1;
+    width: 50px;
+    padding: 20px;
+}
+
+/* Style the button used to pause/play the video */
+#myBtn {
+    width: 200px;
+    font-size: 18px;
+    padding: 10px;
+    border: none;
+    background: #000;
+    color: #fff;
+    cursor: pointer;
+}
+
+#myBtn:hover {
+    background: #ddd;
+    color: black;
+}
+
+
+    .hero {
+        width: 100%; /* Ensure the hero div takes up the full width of the viewport */
+        height: 100vh; /* Ensure the hero div takes up the full height of the viewport */
+        background-image: url('earth.mp4'); /* Specify your image URL */
+        background-position: center center; /* Center the background image */
+        background-size: cover; /* Ensure the image covers the entire element */
+        background-attachment: fixed; /* Make the background fixed when scrolling */
+        position: absolute;
+        z-index: -1;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
