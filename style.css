@@ -1,53 +1,31 @@
 html, body {
     margin: 0;
-    overflow: hidden; /* Prevent scrolling */
+    overflow: hidden; 
 }
 
-/* Style the video to cover the entire window */
+
 #myVideo {
     position: fixed;
-    top: 50%; /* Center vertically */
-    left: 50%; /* Center horizontally */
-    width: 100%; /* Full width of the viewport */
-    height: 100%; /* Full height of the viewport */
-    transform: translate(-50%, -50%) ; /* Center and zoom out by 50% */
-    transform-origin: center; /* Set the origin for scaling*/
+    top: 50%; 
+    left: 50%; 
+    width: 100%; 
+    height: 100%; 
+    transform: translate(-50%, -50%) ; 
+    transform-origin: center; 
 }
 
-/* Add some content at the bottom of the video/page */
-.content {
-    position: fixed;
-    bottom: 0;
-    background: rgba(0, 0, 0, 0.5);
-    color: #f1f1f1;
-    width: 50px;
-    padding: 20px;
-}
 
-/* Style the button used to pause/play the video */
-#myBtn {
-    width: 200px;
-    font-size: 18px;
-    padding: 10px;
-    border: none;
-    background: #000;
-    color: #fff;
-    cursor: pointer;
-}
 
-#myBtn:hover {
-    background: #ddd;
-    color: black;
-}
+
 
 
     .hero {
-        width: 100%; /* Ensure the hero div takes up the full width of the viewport */
-        height: 100vh; /* Ensure the hero div takes up the full height of the viewport */
-        background-image: url('earth.mp4'); /* Specify your image URL */
-        background-position: center center; /* Center the background image */
-        background-size: cover; /* Ensure the image covers the entire element */
-        background-attachment: fixed; /* Make the background fixed when scrolling */
+
+        height: 100vh; 
+        background-image: url('earth.mp4');
+        background-position: center center; 
+        background-size: cover; 
+        background-attachment: fixed; 
         position: absolute;
         z-index: -1;
         display: flex;
@@ -55,3 +33,140 @@ html, body {
         justify-content: center;
     }
     
+
+    body {
+        margin: 0;
+      }
+      
+      .video-background {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+        overflow: hidden;
+      }
+        
+   
+        
+      .header{
+        display: flex;
+        color: white;
+        justify-content: space-evenly;
+        gap: 2rem;
+        height: 80px;
+        align-items: center;
+        background-color: black;
+        margin-top: 0;
+        width: 100%;
+        position: fixed;
+      }
+      
+      #logo a div {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      
+      #logo {
+        display: flex;
+        width: 800px;
+      }
+      
+      .header div a{
+        text-decoration: none;
+        color: white;
+        font-size: 15px;
+      }
+      
+      .header div a p:hover {
+        transform: scale(1.05);
+        color: orange;
+      }
+      
+      .start-empty {
+        width: 100%;
+        height: 835px;
+        display: flex;
+        justify-content: start;
+        align-items: center;
+      }
+      
+
+      .start-empty div h1{
+        font-family: sans-serif;
+        font-size: 40px;
+        margin-left: 10px;
+      }
+      
+      .start-empty div p{
+        font-size: 20px;
+        font-weight: 50;
+        font-family: sans-serif;
+        line-height: 40px;
+      }
+
+      .main-heading {
+        padding-top: 10px;
+      }
+      .lastpart {
+        color: white;
+        background-color: black;
+        width: 100%;
+        height: 40px;
+        text-align: center;
+        align-content: center;
+        font-family: Arial, Helvetica, sans-serif;
+        font-style: italic;
+        font-size: 15px;
+      }
+      
+      .lastpart_x {
+        color: white;
+        background-color: black;
+        width: 100%;
+        height: 40px;
+        text-align: center;
+        align-content: center;
+        font-family: Bulletto;
+        font-size: 30px;
+      }
+
+      #nav {
+        display: inline-block;
+        position: relative;
+        margin: 0 10px;
+    }
+    
+    .dropdown {
+        position: relative;
+        display: inline-block;
+        cursor: pointer;
+    }
+    
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: black;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+        z-index: 1;
+        border: 1px solid #333;
+    }
+    
+    .dropdown-content a {
+        color: white;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+    }
+    
+    .dropdown-content a:hover {
+        background-color: orange;
+        color: black;
+    }
+    
+    .dropdown.active .dropdown-content {
+        display: block;
+    }
