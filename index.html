@@ -45,6 +45,42 @@
         nav a:hover {
             color: #ddd;
         }
+
+        .container {
+            position: relative;
+            margin: 100px 0 0 200px;
+            width: 70%;
+            height: 450px;
+            display: flex;
+            justify-content: start;
+        }
+
+        .container img {
+            width: 600px;
+            height: 120%;
+            object-fit: cover;
+            border-radius: 10px;
+            border: 2px solid beige;
+            transition: all ease-in-out 0.5s;
+        }
+
+        .container img:hover {
+            height: 140%;
+            width: 50%;
+        }
+
+        #logo {
+            justify-content: start;
+            align-self: center;
+            box-shadow: 0px 0px 10px 4px whitesmoke;
+            width: 70px;
+        }
+        .foot{
+            width: 100%;
+            position: absolute;
+            bottom: 0;
+        }
+     
     </style>
 </head>
 <body>
@@ -66,25 +102,22 @@
             <div class="dropdown">
                 <a href="#">CATEGORIES</a>
                 <div class="dropdown-content">
-                    <a href="history.html">History</a>
+                    <a href="history.html">History of space Exploration</a>
+                    <a href="history_universe.html">History of universe</a>
                     <a href="#">Black hole</a>
                     <a href="#">Galaxy</a>
                 </div>
             </div>
             <a href="aboutus.html">ABOUT US</a>
             <a href="contactus.html">CONTACT US</a>
-            <a href="#"><img width="25" height="25" src="https://img.icons8.com/ios-filled/50/FFFFFF/search--v1.png" alt="Search"></a>
             <a href="login.html">LOG IN</a>
+            <a href="#"><img width="25" height="25" src="https://img.icons8.com/ios-filled/50/FFFFFF/search--v1.png" alt="Search"></a>
         </nav>
     </header>
+    <section>
 
-    <main>
-        <section class="sword-catalog">
-
-        </section>
-    </main>
-
-    <footer>
+    </section>
+    <footer class="foot">
         <div class="lastpart_x">WONDER OF UNIVERSE</div>
         <div class="lastpart">Made with 🤍 Rahul, Manmath, and Hemant</div>
     </footer>
