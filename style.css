@@ -180,7 +180,7 @@ body {
 }
 
 .dropdown-content a:hover {
-  background-color: #575757;
+  background-color: orange;
 }
 
 .dropdown:hover .dropdown-content {
