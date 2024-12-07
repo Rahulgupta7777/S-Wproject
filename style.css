@@ -72,7 +72,7 @@ body {
 
 #logo {
   display: flex;
-  width: 800px;
+  width: 50px;
 }
 
 .header div a {
@@ -171,4 +171,78 @@ body {
 
 .dropdown.active .dropdown-content {
   display: block;
+}
+.dropdown-content a {
+  color: white;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: #575757;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+nav a {
+  margin: 0 15px;
+  color: white;
+  text-decoration: none;
+}
+
+nav a:hover {
+  color: #ddd;
+  text-decoration: underline;
+}
+
+.container {
+  position: relative;
+  margin: 100px 0 0 200px;
+  width: 70%;
+  height: 450px;
+  display: flex;
+  justify-content: start;
+}
+
+.container img {
+  width: 600px;
+  height: 120%;
+  object-fit: cover;
+  border-radius: 10px;
+  border: 2px solid beige;
+  transition: all ease-in-out 0.5s;
+}
+
+.container img:hover {
+  height: 140%;
+  width: 50%;
+}
+
+#logo {
+  justify-content: start;
+  align-self: center;
+  box-shadow: 0px 0px 10px 4px whitesmoke;
+  width: 70px;
+}
+.foot{
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+}
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #333;
+  min-width: 200px;
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  border-radius: 5px;
 }
