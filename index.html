@@ -79,11 +79,102 @@
         }
         .stars{background-color: black;color: whitesmoke;font-size:10px;margin-bottom:-100px;height:10px;}
         .content{
-            border: 5px solid yellow;
-            height: 200px;
+            border: 5px groove blue;
+            height: 180px;
             color: yellow;
-             background-color: darkblue;
+            background-color: darkblue;
+
         }
+        /* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Body Styles */
+body {
+    background-color: #0a1d37;
+    color: white;
+    line-height: 1.6;
+}
+
+/* Header Styles */
+header {
+    text-align: center;
+    padding: 2em;
+    background-color: #1e3a56;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+header h1 {
+    font-size: 2.5em;
+    margin-bottom: 0.5em;
+}
+
+header p {
+    font-size: 1.2em;
+    color: #b0c4de;
+}
+
+/* Gallery Styles */
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1em;
+    padding: 2em;
+}
+
+.gallery-item {
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+.gallery-item img {
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: transform 0.5s ease;
+}
+
+.gallery-item:hover img {
+    transform: scale(1.1); 
+}
+
+.caption {
+    position: absolute;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.7);
+    color: white;
+    width: 100%;
+    padding: 1em;
+    text-align: center;
+    font-size: 1.1em;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+
+.gallery-item:hover .caption {
+    opacity: 1; 
+}
+
+
+footer {
+    text-align: center;
+    padding: 1em;
+    background-color: #1e3a56;
+    margin-top: 2em;
+    box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.5);
+}
+
+footer p {
+    font-size: 0.9em;
+    color: #b0c4de;
+}
+
         
      
     </style>
@@ -131,6 +222,33 @@
             </ul>
         </div>
     </div>
+    <main class="gallery">
+        <div class="gallery-item">
+            <img src="image.png" alt="Nebula">
+            <div class="caption">Stunning Nebula</div>
+        </div>
+        <div class="gallery-item">
+            <img src="image copy.png" alt="Galaxy">
+            <div class="caption">Spiral Galaxy</div>
+        </div>
+        <div class="gallery-item">
+            <img src="image copy 2.png" alt="juipter">
+            <div class="caption">juipter</div>
+        </div>
+        <div class="gallery-item">
+            <img src="image copy 3.png" alt="Moon">
+            <div class="caption">Craters of the Moon</div>
+        </div>
+        <div class="gallery-item">
+            <img src="image copy 4.png" alt="Saturn">
+            <div class="caption">Rings of Saturn</div>
+        </div>
+        <div class="gallery-item">
+            <img src="image copy 5.png" alt="Aurora">
+            <div class="caption">Aurora Borealis</div>
+        </div>
+    </main>
+    
     <footer class="foot">
         <div class="lastpart_x">WONDERS OF UNIVERSE</div>
         <div class="stars">
@@ -146,4 +264,5 @@
     
 </body>
 </html>
+
 
