@@ -133,6 +133,7 @@ body {
   align-content: center;
   font-family: Bulletto;
   font-size: 30px;
+  scroll-behavior: smooth;
 }
 
 #nav {
