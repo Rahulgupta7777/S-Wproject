@@ -1,83 +1,144 @@
+/* General Styling */
 body {
-    font-family: 'Arial', sans-serif;
-    margin: 0;
-    padding: 0;
-    background: linear-gradient(135deg, #1d2b64, #f8cdda);
-    color: white;
-    line-height: 1.6;
-  }
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(135deg, #000, #111);
+  color: #e0e0e0;
+  line-height: 1.6;
+  background-image: url('astronaut.jpg'); 
+  background-size: cover; 
+  background-repeat: no-repeat; 
+  background-position: center;
+}
 
-  header {
-    background: #1f2833;
-    color: #66fcf1;
-    text-align: center;
-    padding: 40px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  }
+/* Header Styling */
+header {
+  background: #222;
+  color: #66fcf1;
+  text-align: center;
+  padding: 40px 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
 
+header h1 {
+  margin: 0;
+  font-size: 3rem;
+  text-transform: uppercase;
+  text-shadow: 2px 2px 5px #000;
+}
+
+/* Section Titles */
+h2 {
+  color: #45a29e;
+  text-align: center;
+  font-size: 2rem;
+  margin: 40px 0 20px;
+  font-family: 'Georgia', serif;
+  text-shadow: 1px 1px 4px #000;
+}
+
+h1 {
+  color: #ffcc00;
+  text-decoration: dotted;
+  text-shadow: 2px 7px 10px red;
+  padding-left: 20px;
+}
+
+/* Timeline Styling */
+.timeline {
+  list-style: none;
+  padding: 0;
+  max-width: 1000px;
+  margin: 0 auto;
+  font-size: 1.1rem;
+}
+
+.timeline li {
+  background: #333;
+  margin: 20px 0;
+  padding: 20px;
+  border: 2px solid #045d63;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.timeline li:hover {
+  transform: scale(1.05);
+  background: #444;
+}
+
+.timeline li span {
+  font-weight: bold;
+  color: #f8cdda;
+}
+
+/* By Who Section */
+.bywho {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 1rem;
+  color: yellowgreen;
+  margin-top: 10px;
+}
+
+.bywho a {
+  color: #8fcf8f;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.bywho a:hover {
+  text-decoration: underline;
+}
+
+/* Image Styling */
+.right-img {
+  max-width: 100%;
+  max-height: 200px;
+  object-fit: cover;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+  margin-bottom: 10px;
+}
+
+/* Footer Styling */
+.footer {
+  background: #222;
+  text-align: center;
+  padding: 20px;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.5);
+}
+
+.footer p {
+  margin: 0;
+  color: #66fcf1;
+  font-size: 1rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
   header h1 {
-    margin: 0;
-    font-size: 3rem;
-    text-transform: uppercase;
-  }
-
-  h2 {
-    color: #45a29e;
-    text-align: center;
     font-size: 2rem;
-    margin-top: 40px;
-  }
-
-  .timeline {
-    list-style: none;
-    padding: 0;
-    max-width: 800px;
-    margin: 0 auto;
-    font-size: 1.1rem;
   }
 
   .timeline li {
-    background: #1f2833;
-    margin: 20px 0;
-    padding: 20px;
-    border-left: 5px solid #45a29e;
-    border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
-    transition: transform 0.3s ease, height 0.3s ease;
+    padding: 15px;
+    font-size: 1rem;
   }
 
-  .timeline li:hover {
-    transform: scale(1.05);
+  .right-img {
+    max-height: 150px;
   }
+}
 
-  .timeline li span {
-    font-weight: bold;
-    color: #f8cdda;
-  }
-
-  .footer {
-    background: #1f2833;
-    text-align: center;
-    padding: 20px;
-
-    bottom: 0;
-    width: 100%;
-    box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.2);
-    position:absolute;
-  }
-
-  footer p {
-    margin: 0;
-    color: #66fcf1;
-  }
-
-  @media (max-width: 768px) {
-    header h1 {
-      font-size: 2rem;
-    }
-
-    .timeline li {
-      padding: 15px;
-      font-size: 1rem;
-    }
-  }
+.wikitable{
+  background-color: var(--background-color-neutral-subtle, #f8f9fa);
+    color: var(--color-base, #202122);
+    margin: 1em 0;
+    border: 1px solid var(--border-color-base, #a2a9b1);
+    border-collapse: collapse;
+}
