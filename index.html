@@ -86,7 +86,7 @@
             margin: auto;
 
         }
-       
+     
 * {
     margin: 0;
     padding: 0;
@@ -119,7 +119,7 @@ header p {
     color: #b0c4de;
 }
 
-
+/* Gallery Styles */
 .gallery {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -175,6 +175,13 @@ footer p {
     font-size: 0.9em;
     color: #b0c4de;
 }
+       .scrollable-div {
+            width: 100%;
+            height: 300px;
+            overflow-y: auto;
+            border: 1px solid #ccc;
+            padding: 10px;
+        }
 
         
      
@@ -215,7 +222,7 @@ footer p {
     <div class="container">
         <div class="content">
             <h2>What We Do</h2>
-              <ul style="list-style-type: none;">
+            <ul style="list-style-type: none;">
                 <li><b>Space Missions:</b> Exploring planets, moons, and asteroids.</li>
                 <li><b>Research:</b> Advancing knowledge in astrophysics and planetary science.</li>
                 <li><b>Technology Development:</b> Innovating tools for space travel and habitation.</li>
@@ -223,6 +230,7 @@ footer p {
             </ul>
         </div>
     </div>
+    <div class="scrollable-div">
     <main class="gallery">
         <div class="gallery-item">
             <img src="image.png" alt="Nebula">
@@ -249,6 +257,7 @@ footer p {
             <div class="caption">Aurora Borealis</div>
         </div>
     </main>
+</div>
     
     <footer class="foot">
         <div class="lastpart_x">WONDERS OF UNIVERSE</div>
