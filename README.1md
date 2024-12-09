@@ -1,7 +1,61 @@
-# S-Wproject
-1. Home page is almost-half done.
-2. nav bar section needs improvement.
-3. only about section button is working.
-4. work needs to be done on improving the about page.
-5. Home page footer is not added.
-6. Nav button space between needs to be reduced.
+# Space Exploration Website 🌌
+
+Welcome to the **Space Exploration Website**, a platform dedicated to sharing information, resources, and updates about the mysteries of the universe and humanity's journey to explore it. This project is designed to inspire curiosity and provide knowledge about space exploration.
+
+## Table of Contents
+
+- [About the Project](#about-the-project)
+- [Features](#features)
+- [Technologies Used](#technologies-used)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Screenshots](#screenshots)
+- [Contributing](#contributing)
+- [License](#license)
+- [Contact](#contact)
+
+---
+
+## About the Project
+
+This website provides an immersive experience for users to:
+
+- Learn about space missions, celestial objects, and space agencies.
+- Access visual galleries of space images and videos.
+- Stay updated on recent discoveries and advancements in space exploration.
+- Engage with interactive features like quizzes and 3D models.
+
+---
+
+## Features
+
+- **Homepage:**
+  - Stunning visuals of space and featured articles.
+- **Mission Insights:**
+  - Details on past, present, and future space missions.
+- **Astronomy Section:**
+  - Information on celestial objects like planets, stars, and galaxies.
+- **Interactive Features:**
+  - Space trivia quizzes and 3D celestial object models.
+- **News Updates:**
+  - Latest news from NASA, SpaceX, ISRO, and other space agencies.
+- **Media Gallery:**
+  - High-quality images and videos of space.
+
+---
+
+## Technologies Used
+
+- **Frontend:**
+  - HTML5
+  - CSS3
+
+---
+
+## Installation
+
+Follow these steps to set up the project locally:
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/username/space-exploration-website.git
