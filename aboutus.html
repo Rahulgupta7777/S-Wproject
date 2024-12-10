@@ -1,103 +1,188 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Us - Galactic Explorations</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background:url(https://img.freepik.com/free-photo/ultra-detailed-nebula-abstract-wallpaper-8_1562-753.jpg?semt=ais_hybrid);
-            background-size: cover;
-            color: #fff;
-            text-align: center;
-            background-repeat: no-repeat;
-        }
-        header {
-            padding: 20px;
-        }
-        header h1 {
-            margin: 0;
-            font-size: 2.5rem;
-        }
-        .container {
-            max-width: 800px;
-            margin: 50px auto;
-            background-color: #112240;
-            padding: 30px;
-            border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-        }
-        h2 {
-            margin-top: 0;
-            font-size: 2rem;
-        }
-        p {
-            font-size: 1rem;
-            line-height: 1.6;
-            color: #d1e8ff;
-        }
-        .mission, .team {
-            margin-top: 20px;
-        }
-        .team img {
-            width: 100px;
-            height: 100px;
-            border-radius: 50%;
-            margin: 10px;
-        }
-        .team h3 {
-            margin: 10px 0 0;
-            font-size: 1.2rem;
-        }
-        footer {
-            margin-top: 20px;
-            font-size: 0.9rem;
-        }
-    </style>
-     <link href='https://fonts.googleapis.com/css?family=Great Vibes' rel='stylesheet'>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Us</title>
+  <style>
+    body {
+      font-family: "Poppins", Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      background-color: #121212;
+      color: #f4f4f4;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+
+    h1 {
+      text-align: center;
+      font-size: 3rem;
+      color: #ffffff;
+      margin-bottom: 30px;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+    }
+
+    .about-section {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+
+    .about-section p {
+      font-size: 1.2rem;
+      line-height: 1.8;
+      color: #bbbbbb;
+      max-width: 800px;
+      margin: 0 auto;
+    }
+
+    .team {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 40px;
+    }
+
+    .team-member {
+      background-color: #1e1e1e;
+      border-radius: 15px;
+      box-shadow: 0 6px 15px rgba(0, 0, 0, 0.5);
+      text-align: center;
+      width: 320px;
+      padding: 20px 15px;
+      transition: transform 0.4s, box-shadow 0.4s;
+      overflow: hidden;
+    }
+
+    .team-member:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.7);
+    }
+
+    .team-member .image-container {
+      width: 150px;
+      height: 150px;
+      margin: 0 auto 15px;
+      border-radius: 50%;
+      overflow: hidden;
+      position: relative;
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.7);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .team-member:hover .image-container {
+      transform: scale(1.1);
+      box-shadow: 0 0 20px rgba(80, 250, 123, 0.7);
+    }
+
+    .team-member img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .team-member h3 {
+      margin: 15px 0 5px;
+      color: #ffffff;
+      font-size: 1.5rem;
+    }
+
+    .team-member p {
+      font-size: 1rem;
+      color: #cccccc;
+      line-height: 1.5;
+    }
+
+    .team-member p::before {
+      content: "★ ";
+      color: #50fa7b;
+    }
+
+    /* Footer styling for a complete look */
+    footer {
+      text-align: center;
+      padding: 20px 0;
+      margin-top: 40px;
+      background-color: #181818;
+      color: #888888;
+      font-size: 0.9rem;
+    }
+
+    footer a {
+      color: #f4f4f4;
+      text-decoration: none;
+    }
+
+    footer a:hover {
+      color: #50fa7b;
+    }
+
+    @media (max-width: 768px) {
+      .team-member {
+        width: 100%;
+      }
+
+      h1 {
+        font-size: 2.5rem;
+      }
+
+      .about-section p {
+        font-size: 1rem;
+      }
+    }
+  </style>
 </head>
 <body>
-    <header>
-        <h1>Galactic Explorations</h1>
-    </header>
-    <div class="container">
-        <h2>About Us</h2>
-        <p>
-            At Galactic Explorations, we are dedicated to advancing humanity's understanding of space. 
-            From the outer reaches of the cosmos to the technologies that bring us closer to the stars, 
-            our mission is to inspire, innovate, and explore.
-        </p>
-        <div class="mission">
-            <h2>Our Mission</h2>
-            <p>
-                Our mission is to make space exploration accessible to everyone. We aim to educate, 
-                innovate, and ignite a passion for the universe in students, scientists, and enthusiasts alike.
-            </p>
-        </div>
-        <div class="team">
-            <h2>Our Team</h2>
-            <p>We are a group of passionate students from Newton School of Technology, united by our love for space and technology.</p>
-            <div>
-            <img src="image_folder/hemant.png">
-            <p><span style="font-size:30px;font-family: 'Great Vibes'">Hemant</span><br>CS + Al undergrad at NST'28 & Data science at IIT Madras<br> linux Expert<br>Selected->XR-ᯅ- Hackathon</p>
-            <img src="image_folder/manmath.png">
-            <p><span style="font-size:30px;font-family: 'Great Vibes'"><span style="font-family: Arial, Helvetica, sans-serif;">M</span>anmath <span style="font-family: Arial, Helvetica, sans-serif;">M</span>ohanty</span><br>🔐 Cyber Security Expert from GOOGLE <br> 🛡️ Ethical Hacker <br> ⚙️ DevSecOps Enthusiast<br>🎓 Student of NST x ADYPU <br>📚 Flutter & Dart <br>Selected->Amazon📦⚙️-Sambhav<br>Scratch Hackathon Winner of NST X ADYPU 2024</p> 
-            <img src="image_folder/rahul.png">
-            <p><span style="font-size:30px;font-family: 'Great Vibes'">Rahul Gupta</span><br>webflow Expert<br>Figma Learner<br>NST X Student Developer Club->Backend Developer </p>
-            </div>
-        </div>       
+  <div class="container">
+    <h1>About Us</h1>
+    <div class="about-section">
+      <p>
+        Welcome to our world of innovation and creativity! Our team thrives on crafting unique 
+        digital experiences and delivering top-notch solutions to real-world problems. 
+        Together, we shape the future with technology.
+      </p>
     </div>
-    <footer>
-        &copy; 2024 Galactic Explorations. All rights reserved.
-    </footer>
-</body>
-<footer class="foot" style="text-align: center;background-color: black; margin-top:310px; font-size: 20px;">
-    <div class="lastpart_x">WONDERS OF UNIVERSE</div>
-    <div class="stars">
-        ₊‧.°.⋆✮⋆.°.‧₊₊‧.°.⋆✮⋆.°.‧₊₊‧.°.⋆✮⋆.°.‧₊₊‧.°.⋆✮⋆.°.‧₊₊‧.°.⋆✮⋆.°.‧₊₊‧.°.⋆✮⋆.°.‧₊₊‧.°.⋆✮⋆.°.‧₊₊‧.°.⋆✮⋆.°.‧₊₊‧.°.⋆✮⋆.°.‧₊₊‧.°.⋆✮⋆.°.‧₊₊‧.°.⋆✮⋆.°.‧₊
+
+    <h1>Our Mission</h1>
+    <div class="about-section">
+      <p>
+        Our mission is to make space exploration accessible to everyone. We aim to educate, 
+        innovate, and ignite a passion for the universe in students, scientists, and enthusiasts alike.
+      </p>
+    </div>
+
+    <div class="team">
+      <div class="team-member">
+        <div class="image-container">
+          <img src="image_folder/hemant.png" alt="Hemant">
+        </div>
+        <h3>Hemant</h3>
+        <p>CS + AI undergrad at NST'28 & Data Science at IIT Madras</p>
+      </div>
+      <div class="team-member">
+        <div class="image-container">
+          <img src="image_folder/manmath.png" alt="Manmath">
+        </div>
+        <h3>Manmath</h3>
+        <p>Backend engineer specializing in building secure and scalable solutions.</p>
+      </div>
+      <div class="team-member">
+        <div class="image-container">
+          <img src="image_folder/rahul.png" alt="Rahul">
+        </div>
+        <h3>Rahul</h3>
+        <p>Full-stack developer bridging creativity and technical excellence.</p>
+      </div>
+    </div>
   </div>
+  <footer>
+    © 2024 Awaker | <a href="#">Privacy Policy</a> | <a href="#">Contact Us</a>
   </footer>
+</body>
 </html>
