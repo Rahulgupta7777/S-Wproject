@@ -1,0 +1,82 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #1d2b64, #f8cdda);
+    color: white;
+    line-height: 1.6;
+  }
+
+  header {
+    background: #1f2833;
+    color: #66fcf1;
+    text-align: center;
+    padding: 40px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+
+  header h1 {
+    margin: 0;
+    font-size: 3rem;
+    text-transform: uppercase;
+  }
+
+  h2 {
+    color: #45a29e;
+    text-align: center;
+    font-size: 2rem;
+    margin-top: 40px;
+  }
+
+  .timeline {
+    list-style: none;
+    padding: 0;
+    max-width: 800px;
+    margin: 0 auto;
+    font-size: 1.1rem;
+  }
+
+  .timeline li {
+    background: #1f2833;
+    margin: 20px 0;
+    padding: 20px;
+    border-left: 5px solid #45a29e;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, height 0.3s ease;
+  }
+
+  .timeline li:hover {
+    transform: scale(1.05);
+  }
+
+  .timeline li span {
+    font-weight: bold;
+    color: #f8cdda;
+  }
+
+  .footer {
+    background: #1f2833;
+    text-align: center;
+    padding: 20px;
+
+    bottom: 0;
+    width: 100%;
+    box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.2);
+  }
+
+  footer p {
+    margin: 0;
+    color: #66fcf1;
+  }
+
+  @media (max-width: 768px) {
+    header h1 {
+      font-size: 2rem;
+    }
+
+    .timeline li {
+      padding: 15px;
+      font-size: 1rem;
+    }
+  }
